@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".DangKyActivity">
+    tools:context=".Dangky_activity">
 
 
     <TextView
-        android:text="Sign up"
+        android:text="Đăng Ký"
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="#2196F3"

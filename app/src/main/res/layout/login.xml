@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".DangNhapActivity">
+    tools:context=".DangNhap_activity">
 
     <TextView
-        android:text="Sign In"
+        android:text="Đăng Nhập"
         android:textSize="45sp"
         android:textStyle="bold"
         android:textColor="#2196F3"
