@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm sinh viên"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:id="@+id/spinner_noi"
+        android:spinnerMode="dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <EditText
+        android:id="@+id/Nhapten"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập họ và tên"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="6dp"
+        />
+    <EditText
+        android:id="@+id/diachi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Nhập địa chỉ"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="15dp"
+        />
+    <Button
+        android:id="@+id/btnsubmit"
+        android:text="Submit"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+
+
