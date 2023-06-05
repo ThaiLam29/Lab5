@@ -8,6 +8,7 @@
     android:gravity="center"
     tools:context=".DangNhap_activity">
 
+
     <TextView
         android:text="Đăng Nhập"
         android:textSize="45sp"
@@ -63,5 +64,6 @@
         android:backgroundTint="#2196F3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

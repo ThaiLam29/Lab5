@@ -62,6 +62,7 @@ public class bai1_lab5 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     public static class noi_Hoc {

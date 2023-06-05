@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Bảng điểm "
+        android:id="@+id/bang_diem"/>
+
+    <item
+        android:title="Điểm danh "
+        android:id="@+id/diem_danh"/>
+
+    <item
+        android:title="Đăng Xuất "
+        android:id="@+id/dang_xuat"/>
+
+    <item
+        android:title="Thêm sinh viên "
+        android:id="@+id/them_sv"
+        android:icon="@drawable/add"
+        app:showAsAction="always"/>
+</menu>

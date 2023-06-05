@@ -7,29 +7,16 @@
     android:orientation="vertical"
     tools:context=".bai2_lab5">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#2196F3">
 
-        <ImageView
-            android:src="@drawable/quaylai"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginRight="20dp"/>
-        <TextView
-            android:text="Danh Sách Sinh Viên"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#ffffff"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <ImageView
-            android:src="@drawable/them"
-            android:layout_width="30dp"
-            android:layout_gravity="right"
-            android:layout_marginRight="20dp"
-            android:layout_height="30dp"/>
+    <androidx.appcompat.widget.Toolbar
+
+        app:title="Home"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1976D2">
+
+
 
     </androidx.appcompat.widget.Toolbar>
 

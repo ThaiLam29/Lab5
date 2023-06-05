@@ -30,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Nhập họ và tên"
+        android:textColor="@color/black"
         android:background="@drawable/custom_edittext"
         android:paddingLeft="15dp"
         android:layout_marginTop="6dp"
@@ -41,6 +42,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:hint="Nhập địa chỉ"
+        android:textColor="@color/black"
         android:background="@drawable/custom_edittext"
         android:paddingLeft="15dp"
         />

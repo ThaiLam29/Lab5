@@ -1,10 +1,14 @@
 package com.thailam.lab5;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -12,6 +16,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,6 +34,20 @@ public class bai2_lab5 extends AppCompatActivity {
         setContentView(R.layout.bai2);
         lvSinhVien = findViewById(R.id.lvSinhVien);
         Button btnThem = findViewById(R.id.btnThemMoi);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        Context context = getApplicationContext();
+        CharSequence text = "Hello toast!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
+        getSupportActionBar().setTitle("Home");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         Intent intent = this.getIntent();
 
@@ -45,13 +66,40 @@ public class bai2_lab5 extends AppCompatActivity {
         StudentAdapter adapter = new StudentAdapter(this, list);
         lvSinhVien.setAdapter(adapter);
 
+
+
         btnThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(bai2_lab5.this, bai1_lab5.class));
             }
         });
+
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menutoolbar, menu);
+
+        return super .onCreateOptionsMenu(menu);
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id  = item.getItemId();
+       if(id == R.id.bang_diem){
+           Toast.makeText(this, "Bang diem ", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.diem_danh){
+            Toast.makeText(this, "Diem danh ", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.dang_xuat){
+           startActivity(new Intent(bai2_lab5.this, DangNhap_activity.class));
+        }else if (id ==R.id.them_sv){
+           startActivity(new Intent(bai2_lab5.this, bai1_lab5.class));
+       }
+        return super.onOptionsItemSelected(item);
+    }
+    
 
     public class Student {
         private String title;

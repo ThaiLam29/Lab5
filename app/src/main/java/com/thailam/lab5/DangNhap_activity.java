@@ -56,6 +56,7 @@ public class DangNhap_activity extends AppCompatActivity {
                 }
             }
         });
+
     }
 }
 
